@@ -6,6 +6,7 @@ const userNumsArray = [];
 const indovinati = [];
 
 setTimeout(function(){
+    alert("Inserisci in ordine i 5 numeri")
     for (let index = 0; index < 5; index++) {
         let userNum=parseInt(prompt('Inserisci un numero:'));
         while (isNaN(userNum)){
@@ -13,7 +14,7 @@ setTimeout(function(){
             userNum=parseInt(prompt('Inserisci un numero:'));
         }
         userNumsArray.push(userNum);
-        if (randomNums.includes(userNum)){
+        if (userNumsArray[index]==randomNums[index]){
             indovinati.push(userNum);
         }
     }
