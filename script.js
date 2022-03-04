@@ -7,7 +7,11 @@ const indovinati = [];
 
 setTimeout(function(){
     for (let index = 0; index < 5; index++) {
-        const userNum=parseInt(prompt('Inserisci un numero:'));
+        let userNum=parseInt(prompt('Inserisci un numero:'));
+        while (isNaN(userNum)){
+            alert('Devi inserire un numero!')
+            userNum=parseInt(prompt('Inserisci un numero:'));
+        }
         userNumsArray.push(userNum);
         if (randomNums.includes(userNum)){
             indovinati.push(userNum);
