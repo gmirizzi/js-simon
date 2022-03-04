@@ -18,7 +18,11 @@ setTimeout(function(){
         }
     }
     console.log(userNumsArray);
-    document.getElementById("output").innerHTML=`Ne hai indovinati ${indovinati.length}: ${indovinati}`
+    if (indovinati.length==0){
+        document.getElementById("output").innerHTML=`Non ne hai indovinato nemmeno uno :(`  
+    } else {        
+        document.getElementById("output").innerHTML=`Ne hai indovinati ${indovinati.length}: ${indovinati}.`
+    }
 }, 30000);
 
 randomGenerator(100);
