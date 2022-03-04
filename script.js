@@ -1,6 +1,6 @@
-setTimeout(function(){
-    document.getElementById('numbers').classList.add("dnone");
-}, 25000);
+//i numeri spariscono mezzo secondo prima che compaiano i prompt
+setTimeout(()=>{document.getElementById('numbers').classList.add("dnone");}, 29500);
+
 const randomNums = [];
 const userNumsArray = [];
 const indovinati = [];
@@ -13,9 +13,8 @@ setTimeout(function(){
             indovinati.push(userNum);
         }
     }
-
     console.log(userNumsArray);
-    console.log(indovinati);
+    document.getElementById("output").innerHTML=`Ne hai indovinati ${indovinati.length}: ${indovinati}`
 }, 30000);
 
 randomGenerator(100);
