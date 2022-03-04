@@ -24,11 +24,15 @@ setTimeout(function(){
 randomGenerator(100);
 console.log(randomNums);
 function randomGenerator (max){
-    for (let index = 1; index <= 5; index++) {
-        num=Math.floor(Math.random()*max+1);
-        randomNums.push(num);
-        const element=document.createElement("div");
-        element.innerHTML=num;
-        document.getElementById("numbers").append(element);
+    let index = 1
+    while (index <= 5) {
+        let num=Math.floor(Math.random()*max+1);
+        if (!randomNums.includes(num)){
+            randomNums.push(num);
+            const element=document.createElement("div");
+            element.innerHTML=num;
+            document.getElementById("numbers").append(element);
+            index++;
+        }
     }
 }
