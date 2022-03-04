@@ -15,7 +15,9 @@ h1 {
 }
 
 #numbers {
-    display: flex;
-    justify-content: space-evenly;
     margin: 3em;
+}
+
+.dnone {
+    display: none;
 }

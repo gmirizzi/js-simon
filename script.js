@@ -1,8 +1,12 @@
 setTimeout(function(){
+    document.getElementById('numbers').classList.add("dnone");
+}, 2500);
+
+setTimeout(function(){
     for (let index = 0; index < 5; index++) {
-        prompt('inserisci un numero');  
+        prompt('Inserisci un numero:');  
     }
-}, 30000);
+}, 3000);
 
 randomGenerator(100);
 
