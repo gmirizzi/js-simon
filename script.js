@@ -1,3 +1,9 @@
+setTimeout(function(){
+    for (let index = 0; index < 5; index++) {
+        prompt('inserisci un numero');  
+    }
+}, 30000);
+
 randomGenerator(100);
 
 function randomGenerator (max){
@@ -8,3 +14,4 @@ function randomGenerator (max){
         document.getElementById("numbers").append(element);
     }
 }
+
