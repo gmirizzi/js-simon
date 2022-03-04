@@ -1,0 +1,17 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#numbers {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3em;
+}
